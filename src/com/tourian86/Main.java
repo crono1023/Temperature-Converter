@@ -18,6 +18,7 @@ public class Main {
                 break;
 
             case "-f":
+
             case "-k":
                 break;
 

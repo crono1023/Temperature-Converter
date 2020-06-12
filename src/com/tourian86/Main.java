@@ -21,6 +21,7 @@ public class Main {
         double origTemp;
         if(args.length < 2) {
             System.out.println("Error not enough arguments.");
+            printHelp();
             return;
         }
         conversionType = args[0];
@@ -64,7 +65,8 @@ public class Main {
                 break;
 
             default:
-                throw new IllegalArgumentException();
+                printHelp();
+                return;
         }
         System.out.printf("%.2f %s = %.2f %s", origTemp, origUnit, result, resultUnit);
     }

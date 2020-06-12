@@ -68,7 +68,7 @@ public class Main {
                 printHelp();
                 return;
         }
-        System.out.printf("%.2f %s = %.2f %s", origTemp, origUnit, result, resultUnit);
+        System.out.printf("%.2f %s = %.2f %s\n", origTemp, origUnit, result, resultUnit);
     }
 
     public static double fahrenheitToCelsius(double fahrenheit){
